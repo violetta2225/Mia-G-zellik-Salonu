@@ -1,0 +1,238 @@
+body {
+  background-color: #fccccc;
+}
+
+.el-yazı {
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.alt-kalin-yazi {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.alt-kalin-yazi {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+.orta-el-yazi {
+  font-family: "Uncial Antiqua", system-ui;
+
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.hizmet-kart {
+  background-color: #fae1e1;
+
+  border: 2px solid #f7e6e6;
+  border-radius: 100px;
+  padding: 20px;
+  margin-top: 25px;
+  text-align: center;
+
+  box-shadow: 0 8px 20px rgba(142, 36, 170, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hizmet-kart:hover {
+  transform: translateY(8px);
+}
+#Hizmetlerimiz {
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 60px 20px;
+}
+.wp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 60px;
+  heigth: 60px;
+}
+.wp img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+}
+
+.menu-tetik {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-indez: 1000;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-contect: space-between;
+  gap: 2px;
+}
+.kpt-btn {
+  display: none;
+}
+
+.cizgi {
+  width: 30px;
+  height: 10px;
+  background-color: #a000a6;
+  border-radius: 2px;
+}
+.yan-ikon {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: #e6b7e8;
+  box-shadow: 5px0 15px rgba(142, 36, 170, 015);
+  zindex: 999;
+  padding: 80px 30px 30px 30px;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+}
+#menu-kont:checked ~ .yan-ikon {
+  transform: translateX(0);
+}
+#menu-kont {
+  display: none;
+}
+
+.kpt-btn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 25px;
+
+  cursor: pointer;
+  display: block;
+}
+
+#Musterilerimizin-Yorumlari {
+  justify-content: center;
+
+  gap: 30px;
+  padding: 60px 20px;
+  background-color: #cafaf2;
+
+  text-align: left;
+}
+
+.yorum {
+  background-color: #cafaf2;
+  border-radius: 20px;
+  padding: 25px;
+
+  text-align: left;
+  margin-top: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.yorum:hover {
+  transform: translateX(8px);
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #a4cce0;
+}
+
+.form {
+  position: relative;
+  max-width: 470px;
+  width: 100%;
+  background: #d4eaf8;
+  padding: 60px 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+
+.giris2 {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: -80%;
+  transform: translateX(-50%);
+
+  padding: 20px 140px;
+  border-radius: 10%;
+  background: #adb4b9;
+}
+.form.active .giris2 {
+  bottom: -15%;
+
+  border-radius: 15½;
+}
+
+.form header {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.giris2 header {
+  color: #4e4d4d;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+form input {
+  height: 60px;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+}
+
+.giris2 form input {
+  height: 50px;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+}
+form .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+form .checkbox label {
+  cursor: pointer;
+}
