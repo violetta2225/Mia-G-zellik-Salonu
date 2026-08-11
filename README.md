@@ -1,1 +1,1 @@
-# Mia-G-zellik-Salonu
+# Mia-Guzellik-Salonu
